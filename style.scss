@@ -25,76 +25,121 @@
 body{
     font-family: 'Lato', sans-serif;
     background-color: $main-bg;
-}
-
-
-.tour-price{
-    position: absolute;
-    top: 9%;
-    left: 28.4%;
-    background-color: $price-bg;
-    color: $price-color;
-    font-size: 1.2rem;
-    padding: .2rem;
-    border-bottom-left-radius: 1rem;
-}
-
-main{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
 
-    section{
-        .main-title{
-            text-align: center;
-            font-size: 2rem;
-            color: $text-color;
-        }
-
-        .our-tours{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            align-items: center;
-            justify-content: center;
-            gap: 5rem;
+@media screen and (min-width: 991px){
 
 
-            .tour{
-                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                transition: .4s;
-                width: 400px;
-                
-                
 
-                &:hover{
-                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-                }
+    main{
+        // background-color: red; //To remove later
 
-                img{
-                    width: 400px;
-                    height: 400px;
-                    object-fit: cover;
-                    transition: all .6s ease-in-out;
+        section{
+            .main-title{
+                text-align: center;
+                font-size: 2rem;
+                color: $text-color;
+            }
+
+            .our-tours{
+                padding: 2rem;
+                display: grid;
+                grid-gap: 4rem;
+                // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+                grid-template-columns: repeat(3, 1fr);
+                align-items: start;
+
+
+                .tour{
+                    box-shadow: 0 3rem 6rem 0 rgba(0,0,0,0.2);
+                    transition: .4s;
+                    cursor: pointer;
+                    overflow: hidden;
+                    background-color: white;
+                    border-radius: .4rem;
+                    display: block; 
+                    
 
                     &:hover{
-                        transform: scale(.99);
+                        box-shadow: 0 4rem 8rem 0 rgba(0,0,0,0.2);
+                        transform: translateY(-0.5%);
                     }
-                }
+
+
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 20rem;
+                        object-fit: cover;
+                    }
 
 
 
-
-                  
-                
-
-
-                .tour-texts{
-                    background-color: white;
-                    padding: 2rem;
 
 
                     
+                    
+
+
+                    .tour-texts{
+                        padding: 3rem;
+                        // display: block;
+                        // position:static;
+
+                        .tour-price{
+                            background-color: $price-bg;
+                            color: $price-color;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            padding: .5rem .75rem;
+                            z-index: 999999;
+                            // opacity:10000; 
+                            border-bottom-left-radius: .25rem;
+                        }
+
+                        h3{
+                            font-size: 1.3rem;
+                            color: $text-color;
+                            font-weight: 600;
+                            margin-bottom: 1.5rem;
+                        }
+
+
+                        #myBtn{
+                            color: $btn-color;
+                            display: block;
+                            text-align: center;
+                            padding:.5rem 2rem ;
+                            font-size: 1rem;
+                            outline: none;
+                            border: 2px solid $btn-color;
+                            background-color: white;
+                        }
+
+                        p{
+                            font-size: 1rem;
+                            letter-spacing: .1rem;
+                            line-height: 1.7;
+                            margin-bottom: 2.5rem;
+
+
+                            button{
+                                outline: none;
+                                background:transparent;
+                                border: none;
+                                font-size: 1rem;
+                                text-transform: lowercase;
+                                color: $price-color;
+                            }
+                        }
+
+
+                    }
                 }
             }
         }
