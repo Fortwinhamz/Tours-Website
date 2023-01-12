@@ -84,5 +84,37 @@ function herFunction(){
 }
 
 
+// Failed Script 
+
+// function removeFunction(){
+//     var removeBtn = document.getElementById('myBtn')
+//     var paRis = document.getElementsByClassName('paris')
+
+//     myBtn.addEventListener("click", function() {
+//         tour.style.display = "none";
+//       });
+// }
 
 
+
+const buttonId = document.getElementById('myBtn')
+const cardId = document.getElementById('paris')
+
+buttonId.addEventListener('click', function(){
+     cardId.style.display ="none";
+})
+
+
+
+// Failed script
+
+// const element = document.getElementById("myBtn");
+// element.addEventListener("click", myFunction);
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = "Hello World";
+// }
+
+// document.getElementById('myBtn').addEventListener('click', function(){
+//     this.style.backgroundColor = "red";
+// })

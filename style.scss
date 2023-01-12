@@ -114,11 +114,14 @@ body{
                             color: $btn-color;
                             display: block;
                             text-align: center;
-                            padding:.5rem 2rem ;
+                            padding:.5rem 3rem ;
+                            letter-spacing: .1rem;
                             font-size: 1rem;
                             outline: none;
                             border: 2px solid $btn-color;
                             background-color: white;
+                            margin: 0 auto;
+                            cursor: pointer;
                         }
 
                         p{
