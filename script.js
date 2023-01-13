@@ -84,6 +84,25 @@ function herFunction(){
 }
 
 
+//  const mainTag = document.getElementById('main-tag')
+
+//  if (mainTag == ''){
+//     refreshButton.style.display ='block'
+//  } else{
+//     refreshButton.style.display ='none'
+//  }
+
+
+
+const refreshButton = document.querySelector('.refreshBtn');
+
+const refreshPage = () => {
+  location.reload();
+}
+
+refreshButton.addEventListener('click', refreshPage)
+
+
 // Failed Script 
 
 // function removeFunction(){
@@ -96,13 +115,65 @@ function herFunction(){
 // }
 
 
-
+// Not Interested command for Paris
 const buttonId = document.getElementById('myBtn')
 const cardId = document.getElementById('paris')
 
 buttonId.addEventListener('click', function(){
      cardId.style.display ="none";
 })
+
+
+// Not Interested command for Ireland
+const btnId = document.getElementById('theBtn');
+const cadId = document.getElementById('ireland');
+
+btnId.addEventListener('click', function(){
+     cadId.style.display ="none";
+})
+
+
+
+
+// Not Interested command for Vienna
+const buttonnId = document.getElementById('yourBtn')
+const carddId = document.getElementById('vienna')
+
+buttonnId.addEventListener('click', function(){
+     carddId.style.display ="none";
+})
+
+
+// Not Interested command for Rome
+const butonnId = document.getElementById('ourBtn')
+const cardddId = document.getElementById('rome')
+
+butonnId.addEventListener('click', function(){
+     cardddId.style.display ="none";
+})
+
+
+
+// Not Interested command for Poland
+
+const butonnnId = document.getElementById('herBtn')
+const carrdId = document.getElementById('poland')
+
+butonnnId.addEventListener('click', function(){
+     carrdId.style.display ="none";
+})
+
+
+// Faild scripts
+
+// const buttonId = document.getElementById('myBtn')
+// const cardId = document.getElementById('paris')
+
+// buttonId.addEventListener('click', function(){
+//      cardId.style.display ="none";
+// })
+
+
 
 
 
@@ -117,4 +188,16 @@ buttonId.addEventListener('click', function(){
 
 // document.getElementById('myBtn').addEventListener('click', function(){
 //     this.style.backgroundColor = "red";
+// })
+
+
+
+
+
+
+// const buttonId = document.getElementById('myBtn')
+// const cardId = document.getElementById('paris')
+
+// buttonId.addEventListener('click', function(){
+//      cardId.style.display ="none";
 // })
