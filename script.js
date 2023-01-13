@@ -84,35 +84,7 @@ function herFunction(){
 }
 
 
-//  const mainTag = document.getElementById('main-tag')
 
-//  if (mainTag == ''){
-//     refreshButton.style.display ='block'
-//  } else{
-//     refreshButton.style.display ='none'
-//  }
-
-
-
-const refreshButton = document.querySelector('.refreshBtn');
-
-const refreshPage = () => {
-  location.reload();
-}
-
-refreshButton.addEventListener('click', refreshPage)
-
-
-// Failed Script 
-
-// function removeFunction(){
-//     var removeBtn = document.getElementById('myBtn')
-//     var paRis = document.getElementsByClassName('paris')
-
-//     myBtn.addEventListener("click", function() {
-//         tour.style.display = "none";
-//       });
-// }
 
 
 // Not Interested command for Paris
@@ -163,6 +135,59 @@ butonnnId.addEventListener('click', function(){
      carrdId.style.display ="none";
 })
 
+
+// Page reload command
+
+const refreshButton = document.querySelector('.refreshBtn');
+
+
+const refreshPage = () => {
+  location.reload();
+}
+
+refreshButton.addEventListener('click', refreshPage)
+
+
+
+
+//  const mainTag = document.getElementById('main-tag')
+
+//  if (mainTag == ''){
+//     refreshButton.style.display ='block'
+//  } else{
+//     refreshButton.style.display ='none'
+//  }
+
+
+
+
+// Failed Script 
+
+// function removeFunction(){
+//     var removeBtn = document.getElementById('myBtn')
+//     var paRis = document.getElementsByClassName('paris')
+
+//     myBtn.addEventListener("click", function() {
+//         tour.style.display = "none";
+//       });
+// }
+
+
+
+// Failed Refresh Tag Command 
+// const refreshTag = document.querySelector('.refreshBtn');
+// var ourTours = document.querySelector('.our-tours')
+
+
+// const refreshIt = () =>{
+//     if(refreshTag.style.display == 'none'){
+//         refreshTag.style.display =='block'
+//     }
+
+//     else{
+//         refreshTag.style.display == 'none'
+//     }
+// }
 
 // Faild scripts
 
